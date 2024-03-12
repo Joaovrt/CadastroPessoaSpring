@@ -3,7 +3,6 @@ package com.formulario.formulario.controllers;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.formulario.formulario.Services.PersonServices;
-import com.formulario.formulario.exceptions.UnsupportedMathOperationException;
 import com.formulario.formulario.model.Person;
 
 import java.util.List;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 
@@ -43,5 +41,10 @@ public class PersonController {
     @RequestMapping(method=RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE, produces=MediaType.APPLICATION_JSON_VALUE)
     public Person update(@RequestBody Person person){
         return service.update(person);
+    }
+
+    @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
+    public void delete(@PathVariable(value = "id") String id){
+        service.delete(id);
     }
 }
