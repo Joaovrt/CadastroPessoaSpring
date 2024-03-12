@@ -1,4 +1,4 @@
-package com.calculadora.calculadora.model;
+package com.formulario.formulario.model;
 
 import java.io.Serializable;
 

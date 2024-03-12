@@ -1,4 +1,4 @@
-package com.calculadora.calculadora.exceptions;
+package com.formulario.formulario.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

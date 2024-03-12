@@ -1,10 +1,10 @@
-package com.calculadora.calculadora;
+package com.formulario.formulario;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CalculadoraApplicationTests {
+class FormularioApplicationTests {
 
 	@Test
 	void contextLoads() {

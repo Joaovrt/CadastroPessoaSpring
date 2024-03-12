@@ -1,4 +1,4 @@
-package com.calculadora.calculadora.exceptions;
+package com.formulario.formulario.exceptions;
 
 import java.io.Serializable;
 import java.util.Date;
